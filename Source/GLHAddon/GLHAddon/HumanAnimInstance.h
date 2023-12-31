@@ -343,16 +343,16 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Configs|Transitions", Meta = (ClampMin = 0, ForceUnits = "x"))
 	float DynamicTransitionPlayRate{ 1.5f };
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Configs|Transitions")
 	TObjectPtr<UAnimSequenceBase> StandingDynamicTransitionLeftAnimation{ nullptr };
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Configs|Transitions")
 	TObjectPtr<UAnimSequenceBase> StandingDynamicTransitionRightAnimation{ nullptr };
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Configs|Transitions")
 	TObjectPtr<UAnimSequenceBase> CrouchingDynamicTransitionLeftAnimation{ nullptr };
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Configs|Transitions")
 	TObjectPtr<UAnimSequenceBase> CrouchingDynamicTransitionRightAnimation{ nullptr };
 
 protected:
