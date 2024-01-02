@@ -3,6 +3,8 @@
 #include "HumanAnimInstance.h"
 #include "HumanAnimInstanceProxy.h"
 
+#include "LocomotionCharacter.h"
+
 #include "CharacterMeshAccessorInterface.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(HumanLinkedAnimInstance)
@@ -31,7 +33,7 @@ void UHumanLinkedAnimInstance::NativeInitializeAnimation()
 			Parent = GetMutableDefault<UHumanAnimInstance>();
 		}
 
-		if (!IsValid(Character))
+		if (!Character)
 		{
 			Character = GetMutableDefault<ALocomotionCharacter>();
 		}
@@ -39,7 +41,7 @@ void UHumanLinkedAnimInstance::NativeInitializeAnimation()
 	}
 #endif
 
-	auto* Mesh{ ICharacterMeshAccessorInterface::Execute_GetMainMesh(this) };
+	auto* Mesh{ ICharacterMeshAccessorInterface::Execute_GetMainMesh(Character) };
 	
 	Parent = Mesh ? Cast<UHumanAnimInstance>(Mesh->GetAnimInstance()) : nullptr;
 }
