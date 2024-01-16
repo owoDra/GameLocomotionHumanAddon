@@ -35,7 +35,7 @@ public class GLHAddon : ModuleRules
             {
                 "GFCore",
                 "GCExt",
-                "GCLAddon",
+                "GLExt",
             }
         );
 

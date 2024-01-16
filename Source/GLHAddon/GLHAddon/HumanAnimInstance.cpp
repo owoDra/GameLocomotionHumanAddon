@@ -10,8 +10,8 @@
 #include "LocomotionFunctionLibrary.h"
 #include "LocomotionComponent.h"
 #include "LocomotionCharacter.h"
-#include "GameplayTag/GCLATags_Status.h"
-#include "GCLAddonStatGroup.h"
+#include "GameplayTag/GLETags_Status.h"
+#include "GLExtStatGroup.h"
 
 #include "Components/SkeletalMeshComponent.h"
 

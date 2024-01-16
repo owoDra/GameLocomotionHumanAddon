@@ -24,7 +24,7 @@ public class GLHAddonNode : ModuleRules
 				"Engine", 
 				"AnimationModifiers", 
 				"AnimationBlueprintLibrary",
-                "GCLAddon",
+                "GLExt",
                 "GLHAddon",
             }
 		);
